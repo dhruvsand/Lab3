@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Dhruv Sandesara\Desktop\ee445l\labs\Lab3\Lab3.uvproj
+Project File Date:  01/29/2018
+
+<h2>Output:</h2>
+Rebuild target 'Lab3'
+compiling PLL.c...
+compiling ST7735.c...
+assembling startup.s...
+compiling fixed.c...
+fixed.c(274): warning:  #223-D: function "abs" declared implicitly
+        maxX_value = maxX + abs(minx_16);
+fixed.c(249): warning:  #550-D: variable "minw_16" was set but never used
+        int16_t minw_16;
+fixed.c(250): warning:  #550-D: variable "minh_16" was set but never used
+        int16_t minh_16;
+fixed.c: 3 warnings, 0 errors
+compiling Lab3.c...
+Lab3.c(38): warning:  #223-D: function "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Lab3.c(47): warning:  #69-D: integer conversion resulted in truncation
+    TIMER0_TAILR_R = 4799999999;         // start value for 100 Hz interrupts
+Lab3.c(1104): warning:  #223-D: function "EnableInterrupts" declared implicitly
+          EnableInterrupts();
+Lab3.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=6902 RO-data=35750 RW-data=44 ZI-data=1132  
+".\Lab1.axf" - 0 Error(s), 6 Warning(s).
+</pre>
+</body>
+</html>
