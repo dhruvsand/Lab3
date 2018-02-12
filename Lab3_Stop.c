@@ -51,6 +51,7 @@ int snooze_counter; //Need 10 1Hz interrupts, so this counts up from 0-9
 int snooze_flag;    // This is wat keeps the alarm off while snooze counter increments 
 
 //Flags for turning on snooze; flags for deactivating alarm;   Did not actively turn off or on since did not know Dhruv's implementation
+//If correct buttons is/are pressed call this function
 void Snooze_Call(void){
 //Snooze for 10 seconds since we're demoing this 
 	if( alarm_on_flag == 1){
