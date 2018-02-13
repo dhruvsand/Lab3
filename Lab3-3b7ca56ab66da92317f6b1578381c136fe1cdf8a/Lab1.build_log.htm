@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Dhruv Sandesara\Desktop\ee445l\labs\Lab3-3b7ca56ab66da92317f6b1578381c136fe1cdf8a\Lab3.uvproj
+Project File Date:  02/12/2018
+
+<h2>Output:</h2>
+Rebuild target 'Lab3'
+compiling PLL.c...
+compiling ST7735.c...
+assembling startup.s...
+compiling fixed.c...
+fixed.c(274): warning:  #223-D: function "abs" declared implicitly
+        maxX_value = maxX + abs(minx_16);
+fixed.c(249): warning:  #550-D: variable "minw_16" was set but never used
+        int16_t minw_16;
+fixed.c(250): warning:  #550-D: variable "minh_16" was set but never used
+        int16_t minh_16;
+fixed.c: 3 warnings, 0 errors
+compiling Lab3.c...
+Lab3.c(54): warning:  #223-D: function "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Lab3.c(115): warning:  #174-D: expression has no effect
+                                DelayWait10ms;
+Lab3.c(117): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c(124): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c(130): warning:  #174-D: expression has no effect
+                                DelayWait10ms;
+Lab3.c(132): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c(1194): warning:  #223-D: function "EnableInterrupts" declared implicitly
+          EnableInterrupts();
+Lab3.c(1199): warning:  #177-D: variable "x_start_hour" was declared but never referenced
+        int x_start_hour=63,y_start_hour=43,x_start_min=63,y_start_min=33;
+Lab3.c(1199): warning:  #177-D: variable "y_start_hour" was declared but never referenced
+        int x_start_hour=63,y_start_hour=43,x_start_min=63,y_start_min=33;
+Lab3.c(1199): warning:  #177-D: variable "x_start_min" was declared but never referenced
+        int x_start_hour=63,y_start_hour=43,x_start_min=63,y_start_min=33;
+Lab3.c(1199): warning:  #177-D: variable "y_start_min" was declared but never referenced
+        int x_start_hour=63,y_start_hour=43,x_start_min=63,y_start_min=33;
+Lab3.c(1259): warning:  #550-D: variable "port_b_check" was set but never used
+        int port_b_check;
+Lab3.c(1275): warning:  #223-D: function "abs" declared implicitly
+                        minute = abs(minute - 1);
+Lab3.c(1282): warning:  #223-D: function "abs" declared implicitly
+                        minute = abs(minute + 1) % 60;
+Lab3.c(1298): warning:  #940-D: missing return statement at end of non-void function "set_Minute"
+  }
+Lab3.c(1303): warning:  #223-D: function "abs" declared implicitly
+                        hour = abs(hour - 1);
+Lab3.c(1310): warning:  #223-D: function "abs" declared implicitly
+                        hour = abs(hour + 1) % 12;
+Lab3.c(1326): warning:  #940-D: missing return statement at end of non-void function "set_Hour"
+  }
+Lab3.c(1331): warning:  #223-D: function "abs" declared implicitly
+                        alarm_minute = abs(alarm_minute - 1);
+Lab3.c(1338): warning:  #223-D: function "abs" declared implicitly
+                        alarm_minute = abs(alarm_minute + 1) % 60;
+Lab3.c(1354): warning:  #940-D: missing return statement at end of non-void function "set_Alarm_Minute"
+  }
+Lab3.c(1359): warning:  #223-D: function "abs" declared implicitly
+                        alarm_hour = abs(alarm_hour - 1);
+Lab3.c(1366): warning:  #223-D: function "abs" declared implicitly
+                        alarm_hour = abs(alarm_hour + 1) % 12;
+Lab3.c(1382): warning:  #940-D: missing return statement at end of non-void function "set_Alarm_Hour"
+  }
+Lab3.c(1389): warning:  #223-D: function "DisableInterrupts" declared implicitly
+        DisableInterrupts();
+Lab3.c(1392): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c(1396): warning:  #223-D: function "EnableInterrupts" declared implicitly
+        EnableInterrupts();
+Lab3.c(1387): warning:  #177-D: variable "set_minute_flag" was declared but never referenced
+        int set_minute_flag;
+Lab3.c(1388): warning:  #177-D: variable "set_hour_flag" was declared but never referenced
+        int set_hour_flag;
+Lab3.c(1403): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c(1406): warning:  #174-D: expression has no effect
+                        DelayWait10ms;
+Lab3.c: 31 warnings, 0 errors
+linking...
+Program Size: Code=13398 RO-data=36042 RW-data=92 ZI-data=1132  
+".\Lab1.axf" - 0 Error(s), 34 Warning(s).
+Load "C:\\Users\\Dhruv Sandesara\\Desktop\\ee445l\\labs\\Lab3-3b7ca56ab66da92317f6b1578381c136fe1cdf8a\\Lab1.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
