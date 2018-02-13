@@ -71,7 +71,7 @@ hour = 0;
 			}
 		}
 		if(PB2 == 0x02){
-			minute = abs(hour + 1) % 12;
+			hour = abs(hour + 1) % 12;
 			if(hour == 0){
 				hour = 1;
 			}
@@ -82,6 +82,52 @@ hour = 0;
 		
 	}
 }
+int set_Alarm_Minute(void){
+	alarm_minute = 0;
+	while(PB0 == 0x00){
+		if (PB1 == 0x01){
+			alarm_minute = abs(alarm_minute - 1);
+			
+			if(alarm_minute == 0){
+				alarm_minute = 60;
+			}
+		}
+		if(PB2 == 0x02){
+			alarm_minute = abs(alarm_minute + 1) % 60;
+			if(alarm_minute == 0){
+				alarm_minute = 1;
+			}
+		}
+	
+		
+		
+		
+	}
+}
+int set_Alarm_Hour(){
+alarm_hour = 0;
+	while(PB0 == 0x00){
+		if (PB1 == 0x01){
+			alarm_hour = abs(alarm_hour - 1);
+			
+			if(alarm_hour == 0){
+				alarm_hour = 12;
+			}
+		}
+		if(PB2 == 0x02){
+			alarm_hour = abs(alarm_hour + 1) % 12;
+			if(alarm_hour == 0){
+				alarm_hour = 1;
+			}
+		}
+	
+		
+		
+		
+	}
+}
+
+
 void Set_Timer(void){
 	int set_minute_flag;
 	int set_hour_flag;
@@ -89,7 +135,12 @@ void Set_Timer(void){
 	set_Hour();
 	set_Minute();
 }
-	
 
+void Set_Alarm(void){
+	int set_minute_flag;
+	int set_hour_flag;
+	
+	set_Alarm_Hour();
+	set_Alarm_Minute();
 }
 	
